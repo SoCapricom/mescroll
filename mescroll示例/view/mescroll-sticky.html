@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<link rel="stylesheet" href="../source/css/mescroll-sticky.css">
+		<link rel="stylesheet" href="../plugins/mescroll/mescroll.min.css"/>
+		<title>吸顶悬浮</title>
+	</head>
+	<body>
+		<!--标题-->
+		<p class="header"><a class="btn-left" href="../index.html"> < </a>  吸顶悬浮效果</p>
+		<!--滑动区域-->
+		<div id="mescroll" class="mescroll">
+			<!--模拟的轮播-->
+			<img class="swiper" src="../source/images/icons/swiper.jpg"/>
+			<!--
+				悬浮菜单:
+				1.ios的悬停效果,通过给navWarp添加sticky样式来实现
+				2.android和pc端悬停效果,通过监听mescroll的scroll事件,控制navContent是否为fixed定位来实现
+			-->
+			<div id="navWarp">
+				<div id="navContent" class="nav">
+					<p class="active" i="0">推荐</p>
+					<p i="1">济南</p>
+					<p i="2">中央</p>
+				</div>
+			</div>
+			<!--upscrollWarp用于装载上拉进度和数据列表,避免清空列表不满屏,导致点击悬浮菜单时会滑下来-->
+			<div id="upscrollWarp">
+				<!--展示上拉加载的数据列表-->
+				<ul id="dataList" class="data-list"></ul>
+			</div>
+		</div>
+		
+		<script src="../source/js/common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/mescroll/mescroll.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../source/js/common/api.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="../source/js/mescroll-sticky.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

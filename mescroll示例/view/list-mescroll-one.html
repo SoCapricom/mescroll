@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<link rel="stylesheet" href="../source/css/list-mescroll-one.css">
+		<link rel="stylesheet" href="../plugins/mescroll/mescroll.min.css"/>
+		<title>list-mescroll-one切换菜单刷新列表数据</title>
+	</head>
+	<body>
+		<!--标题-->
+		<div class="header">
+			<p class="header">
+				<a class="btn-left" href="../index.html"> < </a> 
+			</p>
+			<p>单mescroll</p>
+			<p class="tip">每次切换菜单都刷新列表,不缓存数据</p>
+			<!--菜单-->
+			<div class="nav">
+				<p class="active" i="0">推荐</p>
+				<p i="1">济南</p>
+				<p i="2">中央</p>
+			</div>
+		</div>
+		<!--滑动区域-->
+		<div id="mescroll" class="mescroll">
+			<!--展示上拉加载的数据列表-->
+			<ul id="dataList" class="data-list"></ul>
+		</div>
+		
+		<script src="../source/js/common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/mescroll/mescroll.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../source/js/common/api.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="../source/js/list-mescroll-one.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

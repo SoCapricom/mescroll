@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<link rel="stylesheet" href="../source/css/mescroll-search.css">
+		<link rel="stylesheet" href="../plugins/mescroll/mescroll.min.css"/>
+		<title>搜索功能</title>
+	</head>
+	<body>
+		<!--模拟的标题-->
+		<div class="header">
+			<a class="btn-left" href="../index.html"> < </a> 
+			<input id="keyword" type="text" placeholder="请输入搜索关键词" />
+			<p id="search" class="btn-right">搜索</p>
+		</div>
+		<!--滑动区域-->
+		<div id="mescroll" class="mescroll">
+				
+			<p class="nav-title">热门搜索 :</p>
+			<ul class="hot-words">
+				<li labi="0">推荐</li>
+				<li labi="1">济南</li>
+				<li labi="2">中央</li>
+			</ul>
+			<!--搜索结果-->
+			<ul id="dataList" class="data-list"></ul>
+				
+		</div>
+		
+		<script src="../source/js/common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/mescroll/mescroll.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../source/js/common/api.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="../source/js/mescroll-search.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

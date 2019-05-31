@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-webkit-tap-highlight-color:transparent;
+}
+body{background-color: white}
+ul{list-style-type: none}
+img{width: 100%;vertical-align: bottom;}
+
+/*模拟的标题,底部*/
+.header{
+	z-index: 9990;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	line-height: 16px;
+	padding-top: 12px;
+	text-align: center;
+	background-color: white;
+}
+.header .btn-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding:12px;
+}
+.header .btn-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding:12px 6px;
+}
+.header .tip{
+	margin-top: 4px;
+	font-size: 12px;
+	color: gray;
+}
+/*列表*/
+.mescroll{
+	position: fixed;
+	top: 44px;
+	bottom: 51px;
+	height: auto;
+}
+/*回到顶部按钮*/
+.mescroll-totop {
+	bottom: 70px;
+}
+
+/*下拉刷新回调的提示*/
+.download-tip{
+	z-index: 9900;
+	position: fixed;
+	top: 44px;
+	left: 0;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	text-align: center;
+	background-color: rgba(80,175,85,.7);
+	color: white;
+	-webkit-transition: top 300ms;
+	transition: top 300ms;
+	display: none;
+}
+
+/*展示上拉加载的数据列表*/
+.news-list li{
+	padding: 16px;
+	border-bottom: 1px solid #eee;
+}
+.news-list .new-content{
+	font-size: 14px;
+	margin-top: 6px;
+	margin-left: 10px;
+	color: #666;
+}

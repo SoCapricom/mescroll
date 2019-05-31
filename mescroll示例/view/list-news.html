@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<link rel="stylesheet" href="../source/css/list-news.css">
+		<link rel="stylesheet" href="../plugins/mescroll/mescroll.min.css"/>
+		<title>list-news新闻列表</title>
+	</head>
+	<body>
+		<!--标题-->
+		<p class="header">
+			<a class="btn-left" href="../index.html"> < </a>新闻列表 
+		</p>
+		<!--滑动区域-->
+		<div id="mescroll" class="mescroll">
+			<p class="notice">本Demo的下拉刷新: 添加新数据到列表顶部</p>
+			<ul id="newsList" class="news-list"></ul>
+		</div>
+		
+		<script src="../source/js/common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/mescroll/mescroll.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../source/js/common/api.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="../source/js/list-news.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

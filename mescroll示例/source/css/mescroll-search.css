@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-touch-callout:none;
+	-webkit-tap-highlight-color:transparent;
+}
+*:not(input,textarea) { 
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none; 
+}
+body{background-color: white}
+ul{list-style-type: none}
+a {text-decoration: none;color: #18B4FE;}
+
+/*模拟的标题*/
+.header{
+	z-index: 9990;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	background-color: white;
+}
+.header .btn-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding:12px 20px;
+	line-height: 22px;
+}
+.header input{
+	position: absolute;
+	top: 8px;
+	left: 20%;
+	width: 60%;
+	padding:6px 0;
+	border: 1px solid #18B4FE;
+	border-radius: 8px;
+	text-align: center;
+	outline:none;
+	-webkit-appearance: none;
+}
+.header .btn-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding:0 20px;
+	color: #18B4FE;
+}
+/*热门搜索*/
+.nav-title{
+	padding: 20px 0 12px 20px;
+	font-size: 14px;
+	color: gray;
+}
+.hot-words{
+	padding-bottom: 25px;
+	border-bottom: 1px solid #eee;
+}
+.hot-words li{
+	display: inline-block;
+	margin-left: 15px;
+	padding: 4px 20px;
+	border: 1px solid #FF6990;
+	border-radius: 50px;
+	color: #FF6990;
+}
+.hot-words li.cur{
+	border: 1px solid #18B4FE;
+    color: #18B4FE;
+}
+/*mescroll 滚动区域*/
+.mescroll{
+	position: fixed;
+	top: 44px;
+	bottom: 0;
+	height: auto;
+}
+/*搜索结果*/
+.data-list li{
+	position: relative;
+	padding: 10px 8px 10px 120px;
+	border-bottom: 1px solid #eee;
+}
+.data-list .pd-img{
+	position: absolute;
+	left: 18px;
+	top: 18px;
+	width: 80px;
+	height: 80px;
+}
+.data-list .pd-name{
+	font-size: 16px;
+	line-height: 20px;
+	height: 40px;
+	overflow: hidden;
+}
+.data-list .pd-price{
+	margin-top: 8px;
+	color: red;
+}
+.data-list .pd-sold{
+	font-size: 12px;
+	margin-top: 8px;
+	color: gray;
+}
+/*回到顶部按钮*/
+.mescroll-totop{
+	font-size: 12px;
+	line-height: 10px;
+	background-color: white;
+	border: 1px solid gray;
+	text-align: center;
+}
+.mescroll-totop p{
+	padding-top: 6px;
+	color: #666;
+}
